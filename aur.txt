@@ -1,0 +1,5 @@
+8188eu-aircrack-dkms-git
+eww-git-debug
+spotify
+yay
+yay-debug

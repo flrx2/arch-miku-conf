@@ -1,0 +1,61 @@
+@define-color blk #000000;
+@define-color wht #ffffff;
+
+* {
+    font-family: "JetBrainsMono Nerd Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+window#waybar {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 0;
+    margin: 0;
+    color: @wht;
+}
+
+window#waybar.empty {
+    background-color: transparent;
+    color: @blk;
+}
+
+#workspaces button {
+    padding: 0 6px;
+    background: transparent;
+    color: @wht;
+}
+
+#workspaces button.active label {
+    font-size: 13px;
+}
+
+#workspaces button.empty {
+    opacity: 0.5;
+}
+
+window#waybar.empty #workspaces button {
+    color: @blk
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#network,
+#tray {
+    padding: 0 6px;
+}
+
+#clock {
+}
+#disk {
+}
+#memory {
+}
+#cpu {
+}
+#network {
+}
+#battery {
+}
