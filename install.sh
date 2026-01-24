@@ -61,4 +61,8 @@ else
     echo "cursor_size = 24" >> "$CONF"
 fi
 
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/noraj/refind-theme-regular/master/install.sh)"
+sudoedit /boot/efi/EFI/refind/themes/refind-theme-regular/theme.conf
+git clone -b main --depth=1 https://github.com/uiriansan/SilentSDDM && cd SilentSDDM && ./install.sh
+
 echo "Надеюсь работает"
