@@ -29,7 +29,6 @@ echo "Копируем..."
 
 # Простой вариант — копируем
 cp -r hypr "$HOME/.config/"
-cp -r waybar "$HOME/.config/"
 cp -r fish "$HOME/.config/"
 cp -r wofi "$HOME/.config/"
 cp -r kitty "$HOME/.config/"
