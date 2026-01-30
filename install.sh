@@ -16,7 +16,6 @@ backup() {
 
 
 backup "$HOME/.config/hypr"
-backup "$HOME/.config/waybar"
 backup "$HOME/.config/fish"
 backup "$HOME/.config/wofi"
 backup "$HOME/.config/kitty"
@@ -24,11 +23,6 @@ backup "$HOME/.config/kitty"
 if [ -f "packages.txt" ]; then
     echo "Работает пакман..."
     sudo pacman -S --needed - < packages.txt
-fi
-
-if command -v yay &> /dev/null && [ -f "aur.txt" ]; then
-    echo "YAY..."
-    yay -S --needed - < aur.txt
 fi
 
 echo "Копируем..."
