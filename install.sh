@@ -1,24 +1,8 @@
 #!/bin/bash
-
-set -e  
+  
 
 echo "Начинается..."
 
-BACKUP_DIR="$HOME/.backup_dotfiles"
-mkdir -p "$BACKUP_DIR"
-
-backup() {
-    if [ -e "$1" ]; then
-        echo "Backing up $1 → $BACKUP_DIR"
-        mv "$1" "$BACKUP_DIR/"
-    fi
-}
-
-
-backup "$HOME/.config/hypr"
-backup "$HOME/.config/fish"
-backup "$HOME/.config/wofi"
-backup "$HOME/.config/kitty"
 
 if [ -f "packages.txt" ]; then
     echo "Работает пакман..."
@@ -28,11 +12,11 @@ fi
 echo "Копируем..."
 
 # Простой вариант — копируем
-cp -r hypr "$HOME/.config/"
-cp -r fish "$HOME/.config/"
-cp -r wofi "$HOME/.config/"
-cp -r kitty "$HOME/.config/"
-cp -r walapper "$HOME"
+mv -r hypr "$HOME/.config/"
+mv -r fish "$HOME/.config/"
+mv -r wofi "$HOME/.config/"
+mv -r kitty "$HOME/.config/"
+mv -r walapper "$HOME"
 swww img walapper/hatsune-miku-2560x1440-24858.png
 
 mkdir -p ~/.icons
