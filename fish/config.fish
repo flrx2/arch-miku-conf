@@ -9,4 +9,5 @@
  alias nv='nvim'
  alias syu='sudo pacman -Syu'
  alias nanoh='nano ~/.config/hypr/hyprland.conf'
+ alias gg='git add .; git commit -m '.'; git push'
 end
